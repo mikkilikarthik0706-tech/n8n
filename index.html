@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mikkili Karthik — BBA student, AI &amp; automation builder from Bangalore, Karnataka." />
+  <meta name="keywords" content="AI developer, automation, n8n, finance, portfolio, technology, generative AI" />
+  <meta name="author" content="Mikkili Karthik" />
+  <meta property="og:title" content="Mikkili Karthik — AI &amp; Automation Developer" />
+  <meta property="og:description" content="Building at the intersection of Finance, Technology & AI." />
+  <meta property="og:type" content="website" />
+  <title>Mikkili Karthik — AI &amp; Automation Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================= -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <span class="logo-bracket">[</span>MK<span class="logo-bracket">]</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"       class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about"      class="nav-link"        data-section="about">About</a></li>
+        <li><a href="#skills"     class="nav-link"        data-section="skills">Skills</a></li>
+        <li><a href="#projects"   class="nav-link"        data-section="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link"        data-section="experience">Experience</a></li>
+        <li><a href="#contact"    class="nav-link"        data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="nav-pill" aria-label="Contact Karthik">Let's talk</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i data-lucide="sun" class="theme-icon theme-icon--light"></i>
+          <i data-lucide="moon" class="theme-icon theme-icon--dark"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+  <!-- =========================================================
+       HERO
+  ========================================================= -->
+  <section class="hero" id="home" aria-labelledby="hero-heading">
+    <!-- Animated canvas background -->
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+    <!-- Decorative grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <!-- Glow orbs -->
+    <div class="orb orb--blue"   aria-hidden="true"></div>
+    <div class="orb orb--purple" aria-hidden="true"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <!-- Badge -->
+        <div class="hero-badge" aria-label="Availability status">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>Available for opportunities</span>
+        </div>
+
+        <!-- Location chip -->
+        <div class="hero-location">
+          <i data-lucide="map-pin" aria-hidden="true"></i>
+          <span>Bangalore, Karnataka</span>
+        </div>
+
+        <h1 class="hero-heading" id="hero-heading">
+          Building at the<br />
+          <span class="gradient-text">Intersection of</span><br />
+          Finance, Technology &amp; AI.
+        </h1>
+
+        <p class="hero-sub">
+          I'm a curious builder exploring artificial intelligence, automation, finance, and technology.
+          I enjoy transforming ideas into practical solutions through experimentation, continuous
+          learning, and innovative projects.
+        </p>
+
+        <div class="hero-meta">
+          <div class="hero-name-block">
+            <span class="hero-name">Mikkili Karthik</span>
+            <span class="hero-title">Aspiring AI &amp; Automation Developer</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn--primary">
+            <i data-lucide="zap" aria-hidden="true"></i>
+            Explore My Work
+          </a>
+          <a href="#contact" class="btn btn--ghost">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            Contact Me
+          </a>
+        </div>
+
+        <!-- Mini stats row -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="stat-num">6+</span>
+            <span class="stat-label">Learning Tracks</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile card -->
+      <div class="hero-visual">
+        <div class="profile-card" aria-label="Profile photo placeholder">
+          <div class="profile-card__glow" aria-hidden="true"></div>
+          <div class="profile-img-wrap">
+            <img
+              src="assets/profile.png"
+              alt="Mikkili Karthik profile photo"
+              class="profile-img"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <div class="profile-placeholder" aria-hidden="true">
+              <i data-lucide="user" style="width:48px;height:48px;"></i>
+              <span>Add profile.png</span>
+            </div>
+          </div>
+          <!-- Floating labels -->
+          <div class="float-chip float-chip--top-right">
+            <i data-lucide="cpu" aria-hidden="true"></i> AI Developer
+          </div>
+          <div class="float-chip float-chip--bottom-left">
+            <i data-lucide="trending-up" aria-hidden="true"></i> Finance
+          </div>
+          <div class="float-chip float-chip--bottom-right">
+            <i data-lucide="workflow" aria-hidden="true"></i> Automation
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-label="Scroll down">
+      <span>Scroll</span>
+      <i data-lucide="chevrons-down" aria-hidden="true"></i>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ABOUT
+  ========================================================= -->
+  <section class="section about" id="about" aria-labelledby="about-heading">
+    <div class="section-container">
+      <div class="section-label">
+        <span class="label-line" aria-hidden="true"></span>
+        About Me
+      </div>
+
+      <div class="about-grid">
+        <!-- Text content -->
+        <div class="about-text reveal">
+          <h2 class="section-heading" id="about-heading">
+            Curious Builder.<br />
+            <span class="gradient-text">Finance Meets Code.</span>
+          </h2>
+
+          <div class="about-body">
+            <p>
+              I'm <strong>Mikkili Karthik</strong>, a BBA student at <strong>Stride School of Business, Bengaluru</strong>,
+              combining business fundamentals with hands-on capabilities in AI automation, web design,
+              copywriting, and digital operations. I believe technology and business thinking are most
+              powerful together.
+            </p>
+
+            <p>
+              My journey into AI started with a simple question: <em>"what can I actually build with this?"</em>
+              That curiosity led me to create a live automation using <strong>n8n</strong> — connecting
+              Telegram to OpenAI and Google Gemini to build a working AI-powered chatbot, with no
+              traditional backend required.
+            </p>
+
+            <p>
+              Through <strong>CopycraftStudios</strong>, I've applied these skills practically — designing
+              responsive landing pages, drafting targeted copy and email sequences, editing short-form video,
+              and automating customer interaction pipelines using webhook triggers and AI-assisted responses
+              to reduce operational turnaround time.
+            </p>
+
+            <p>
+              I'm a selected participant in the <strong>McKinsey Forward Program</strong>, developing
+              structured problem-solving, digital communication, and adaptability skills. My long-term
+              goal is to sit at the intersection of <strong>business strategy, finance, and intelligent
+              automation</strong>.
+            </p>
+          </div>
+
+          <div class="about-values">
+            <div class="value-pill"><i data-lucide="lightbulb" aria-hidden="true"></i> Learn by building</div>
+            <div class="value-pill"><i data-lucide="layers" aria-hidden="true"></i> Cross-discipline thinking</div>
+            <div class="value-pill"><i data-lucide="shield" aria-hidden="true"></i> Honest about skill level</div>
+            <div class="value-pill"><i data-lucide="rocket" aria-hidden="true"></i> Ambitious vision</div>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="about-visual reveal reveal--right">
+          <div class="about-card-stack">
+            <!-- Interest cards -->
+            <div class="about-interest-card about-interest-card--primary">
+              <div class="interest-icon interest-icon--blue">
+                <i data-lucide="brain-circuit" aria-hidden="true"></i>
+              </div>
+              <div>
+                <strong>Artificial Intelligence</strong>
+                <p>LLMs, generative AI, and AI agents — learning how intelligent systems work and how to harness them.</p>
+              </div>
+            </div>
+
+            <div class="about-interest-card">
+              <div class="interest-icon interest-icon--purple">
+                <i data-lucide="workflow" aria-hidden="true"></i>
+              </div>
+              <div>
+                <strong>Workflow Automation</strong>
+                <p>Building automated pipelines with n8n, connecting APIs, and eliminating manual repetition.</p>
+              </div>
+            </div>
+
+            <div class="about-interest-card">
+              <div class="interest-icon interest-icon--green">
+                <i data-lucide="trending-up" aria-hidden="true"></i>
+              </div>
+              <div>
+                <strong>Finance &amp; Markets</strong>
+                <p>Financial analysis, market research, and understanding how capital flows through the world.</p>
+              </div>
+            </div>
+
+            <div class="about-interest-card">
+              <div class="interest-icon interest-icon--orange">
+                <i data-lucide="shield-check" aria-hidden="true"></i>
+              </div>
+              <div>
+                <strong>Cybersecurity</strong>
+                <p>Exploring ethical hacking, networking fundamentals, and security concepts in authorised lab environments.</p>
+              </div>
+            </div>
+
+            <!-- Code snippet decoration -->
+            <div class="code-snippet-card" aria-hidden="true">
+              <div class="code-header">
+                <span class="code-dot code-dot--red"></span>
+                <span class="code-dot code-dot--yellow"></span>
+                <span class="code-dot code-dot--green"></span>
+                <span class="code-filename">philosophy.js</span>
+              </div>
+              <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">me</span> = {
+  mindset: <span class="code-string">"learn by building"</span>,
+  goal: <span class="code-string">"finance + technology"</span>,
+  currentlyLearning: [
+    <span class="code-string">"AI agents"</span>,
+    <span class="code-string">"n8n automation"</span>,
+    <span class="code-string">"ethical hacking"</span>
+  ]
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SKILLS
+  ========================================================= -->
+  <section class="section skills" id="skills" aria-labelledby="skills-heading">
+    <div class="section-container">
+      <div class="section-label">
+        <span class="label-line" aria-hidden="true"></span>
+        Skills &amp; Toolbox
+      </div>
+
+      <div class="skills-header reveal">
+        <h2 class="section-heading" id="skills-heading">
+          Technologies I'm<br />
+          <span class="gradient-text">Exploring &amp; Building With</span>
+        </h2>
+        <p class="section-sub">
+          These are the technologies I am actively learning and experimenting with.
+          Proficiency levels reflect honest self-assessment.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category A -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <div class="skill-category__icon skill-category__icon--blue">
+              <i data-lucide="cpu" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3>AI &amp; Automation</h3>
+              <span class="skill-category__count">7 skills</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--blue">n8n</span>
+            <span class="skill-tag skill-tag--blue">Workflow Automation</span>
+            <span class="skill-tag skill-tag--blue">Large Language Models</span>
+            <span class="skill-tag skill-tag--blue">Prompt Engineering</span>
+            <span class="skill-tag skill-tag--blue">AI Agents</span>
+            <span class="skill-tag skill-tag--blue">API Integrations</span>
+            <span class="skill-tag skill-tag--blue">Chatbot Development</span>
+          </div>
+        </div>
+
+        <!-- Category B -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <div class="skill-category__icon skill-category__icon--purple">
+              <i data-lucide="code-2" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3>Programming &amp; Dev</h3>
+              <span class="skill-category__count">6 skills</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--purple">HTML</span>
+            <span class="skill-tag skill-tag--purple">CSS</span>
+            <span class="skill-tag skill-tag--purple">JavaScript</span>
+            <span class="skill-tag skill-tag--purple">Python</span>
+            <span class="skill-tag skill-tag--purple">Web Design</span>
+            <span class="skill-tag skill-tag--purple">REST APIs</span>
+            <span class="skill-tag skill-tag--purple">Git &amp; GitHub</span>
+          </div>
+        </div>
+
+        <!-- Category C -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <div class="skill-category__icon skill-category__icon--green">
+              <i data-lucide="bar-chart-2" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3>Business &amp; Finance</h3>
+              <span class="skill-category__count">6 skills</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--green">Financial Analysis</span>
+            <span class="skill-tag skill-tag--green">Business Analytics</span>
+            <span class="skill-tag skill-tag--green">Financial Modelling</span>
+            <span class="skill-tag skill-tag--green">Market Research</span>
+            <span class="skill-tag skill-tag--green">Copywriting</span>
+            <span class="skill-tag skill-tag--green">Email Marketing</span>
+            <span class="skill-tag skill-tag--green">Video Editing</span>
+          </div>
+        </div>
+
+        <!-- Category D -->
+        <div class="skill-category reveal">
+          <div class="skill-category__header">
+            <div class="skill-category__icon skill-category__icon--orange">
+              <i data-lucide="shield" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3>Cybersecurity</h3>
+              <span class="skill-category__count">5 skills</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--orange">Security Fundamentals</span>
+            <span class="skill-tag skill-tag--orange">Networking</span>
+            <span class="skill-tag skill-tag--orange">Linux</span>
+            <span class="skill-tag skill-tag--orange">Web Security</span>
+            <span class="skill-tag skill-tag--orange">Ethical Hacking Concepts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning disclaimer -->
+      <div class="learning-note reveal">
+        <i data-lucide="info" aria-hidden="true"></i>
+        <span>All skills listed represent areas I am actively studying and developing through practical projects and self-directed learning.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PROJECTS
+  ========================================================= -->
+  <section class="section projects" id="projects" aria-labelledby="projects-heading">
+    <div class="section-container">
+      <div class="section-label">
+        <span class="label-line" aria-hidden="true"></span>
+        Featured Projects
+      </div>
+
+      <div class="projects-header reveal">
+        <h2 class="section-heading" id="projects-heading">
+          Things I've<br />
+          <span class="gradient-text">Built &amp; Explored</span>
+        </h2>
+        <p class="section-sub">
+          A collection of projects representing my learning journey — from live automations to concepts in development.
+        </p>
+      </div>
+
+      <!-- PROJECT 01 — AI Telegram Automation -->
+      <article class="project-card project-card--featured reveal" aria-labelledby="proj1-title">
+        <div class="project-card__inner">
+          <!-- Preview -->
+          <div class="project-preview">
+            <div class="project-preview__badge">
+              <span class="status-dot status-dot--live" aria-hidden="true"></span>
+              Live Project
+            </div>
+            <img
+              src="assets/n8n-workflow.png"
+              alt="n8n workflow screenshot showing Telegram Trigger → Basic LLM Chain → Send a text message, with OpenAI and Google Gemini model connections"
+              class="project-preview__img"
+            />
+            <div class="project-preview__overlay" aria-hidden="true"></div>
+          </div>
+
+          <!-- Content -->
+          <div class="project-content">
+            <div class="project-number">01</div>
+            <div class="project-category">AI Automation · n8n · Telegram</div>
+            <h3 class="project-title" id="proj1-title">AI Telegram Automation</h3>
+            <p class="project-desc">
+              An AI-powered Telegram automation system that receives incoming messages,
+              processes them through a language model (OpenAI or Google Gemini), and
+              automatically sends an intelligent response back to the user.
+            </p>
+
+            <div class="project-features">
+              <h4>Key Features</h4>
+              <ul>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Telegram message triggering</li>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> OpenAI GPT integration</li>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Google Gemini integration</li>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Automated AI responses</li>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Modular workflow architecture</li>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Fallback model support</li>
+              </ul>
+            </div>
+
+            <div class="project-problem">
+              <h4>Problem It Solves</h4>
+              <p>
+                Enables intelligent automated responses on Telegram without writing complex
+                backend code — any business or developer can connect AI capabilities to
+                their messaging workflows in minutes.
+              </p>
+            </div>
+
+            <div class="project-stack">
+              <span class="stack-tag">n8n</span>
+              <span class="stack-tag">OpenAI API</span>
+              <span class="stack-tag">Google Gemini API</span>
+              <span class="stack-tag">Telegram Bot API</span>
+              <span class="stack-tag">LLM Chains</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#automation-lab" class="btn btn--primary btn--sm">
+                <i data-lucide="eye" aria-hidden="true"></i> View Workflow
+              </a>
+              <a href="#" class="btn btn--ghost btn--sm" aria-label="GitHub repository (placeholder)">
+                <i data-lucide="github" aria-hidden="true"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bottom row of 3 cards -->
+      <div class="projects-row">
+
+        <!-- PROJECT 02 — AI Business Assistant -->
+        <article class="project-card reveal" aria-labelledby="proj2-title">
+          <div class="project-card__top">
+            <div class="project-card-icon project-card-icon--purple">
+              <i data-lucide="bot" aria-hidden="true"></i>
+            </div>
+            <div class="project-status project-status--learning">
+              <span class="status-dot status-dot--learning" aria-hidden="true"></span>
+              Live Work
+            </div>
+          </div>
+          <div class="project-number">02</div>
+          <div class="project-category">Digital Marketing · Automation</div>
+          <h3 class="project-title" id="proj2-title">CopycraftStudios Digital Operations</h3>
+          <p class="project-desc">
+            Hands-on digital operations work for <strong>CopycraftStudios</strong> — building
+            responsive landing pages, drafting targeted email sequences, editing short-form
+            video assets, and automating customer interaction pipelines using webhook triggers
+            and AI-assisted responses to cut operational turnaround.
+          </p>
+          <div class="project-features project-features--compact">
+            <ul>
+              <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Responsive web landing pages</li>
+              <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Targeted copywriting &amp; email sequences</li>
+              <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Short-form video editing</li>
+              <li><i data-lucide="check-circle-2" aria-hidden="true"></i> AI-powered customer interaction automation</li>
+            </ul>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">HTML / CSS</span>
+            <span class="stack-tag">Copywriting</span>
+            <span class="stack-tag">Email Marketing</span>
+            <span class="stack-tag">n8n Webhooks</span>
+            <span class="stack-tag">Video Editing</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn btn--outline btn--sm" aria-label="Project in development">
+              <i data-lucide="clock" aria-hidden="true"></i> In Development
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 03 — Financial Dashboard -->
+        <article class="project-card reveal" aria-labelledby="proj3-title">
+          <div class="project-card__top">
+            <div class="project-card-icon project-card-icon--green">
+              <i data-lucide="bar-chart-4" aria-hidden="true"></i>
+            </div>
+            <div class="project-status project-status--upcoming">
+              <span class="status-dot status-dot--upcoming" aria-hidden="true"></span>
+              Upcoming
+            </div>
+          </div>
+          <div class="project-number">03</div>
+          <div class="project-category">Finance · Data Visualisation</div>
+          <h3 class="project-title" id="proj3-title">Financial Analysis Dashboard</h3>
+          <p class="project-desc">
+            A planned analytics dashboard designed to analyse financial information
+            and present insights through interactive charts — covering revenue,
+            profitability, ratios, and business performance comparisons.
+          </p>
+          <div class="project-features project-features--compact">
+            <ul>
+              <li><i data-lucide="circle" aria-hidden="true"></i> Revenue &amp; profitability analysis</li>
+              <li><i data-lucide="circle" aria-hidden="true"></i> Financial ratio tracking</li>
+              <li><i data-lucide="circle" aria-hidden="true"></i> Interactive charts</li>
+              <li><i data-lucide="circle" aria-hidden="true"></i> Business performance comparison</li>
+            </ul>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">Chart.js</span>
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Excel / CSV</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn btn--outline btn--sm" aria-label="Project in development">
+              <i data-lucide="clock" aria-hidden="true"></i> In Development
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 04 — Cybersecurity Lab -->
+        <article class="project-card reveal" aria-labelledby="proj4-title">
+          <div class="project-card__top">
+            <div class="project-card-icon project-card-icon--orange">
+              <i data-lucide="terminal" aria-hidden="true"></i>
+            </div>
+            <div class="project-status project-status--learning">
+              <span class="status-dot status-dot--learning" aria-hidden="true"></span>
+              Learning
+            </div>
+          </div>
+          <div class="project-number">04</div>
+          <div class="project-category">Cybersecurity · Education</div>
+          <h3 class="project-title" id="proj4-title">Cybersecurity Learning Lab</h3>
+          <p class="project-desc">
+            A documented learning journey through cybersecurity fundamentals — networking,
+            Linux, web security, and ethical hacking concepts explored entirely within
+            legal, authorised educational environments.
+          </p>
+          <div class="project-features project-features--compact">
+            <ul>
+              <li><i data-lucide="circle" aria-hidden="true"></i> Networking fundamentals</li>
+              <li><i data-lucide="circle" aria-hidden="true"></i> Linux CLI exercises</li>
+              <li><i data-lucide="circle" aria-hidden="true"></i> Web security concepts</li>
+              <li><i data-lucide="circle" aria-hidden="true"></i> Ethical hacking labs</li>
+            </ul>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Linux</span>
+            <span class="stack-tag">Networking</span>
+            <span class="stack-tag">Web Security</span>
+            <span class="stack-tag">TryHackMe</span>
+          </div>
+          <div class="project-actions">
+            <a href="#journey" class="btn btn--ghost btn--sm">
+              <i data-lucide="book-open" aria-hidden="true"></i> See Journey
+            </a>
+          </div>
+        </article>
+
+      </div><!-- /.projects-row -->
+
+      <!-- PROJECT 05 — AI Invoice Reminder Automation (second featured) -->
+      <div style="margin-top: 32px;">
+        <div class="section-label" style="margin-bottom: 20px;">
+          <span class="label-line" aria-hidden="true"></span>
+          Second Workflow
+        </div>
+      </div>
+      <article class="project-card project-card--featured reveal" aria-labelledby="proj5-title">
+        <div class="project-card__inner" style="grid-template-columns: 0.9fr 1.1fr;">
+          <!-- Content first -->
+          <div class="project-content">
+            <div class="project-number">05</div>
+            <div class="project-category">AI Automation · Finance · n8n</div>
+            <h3 class="project-title" id="proj5-title">AI Invoice Reminder Automation</h3>
+            <p class="project-desc">
+              A fully automated invoice reminder system that runs on a daily schedule, fetches
+              pending invoices from Google Sheets, computes days until due, uses AI to compose
+              contextual reminder messages, and routes them intelligently via Gmail — escalating
+              from upcoming reminders to overdue alerts automatically.
+            </p>
+
+            <div class="project-features">
+              <h4>Key Features</h4>
+              <ul>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Daily scheduled trigger</li>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Google Sheets integration</li>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> AI-generated reminder messages</li>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Intelligent urgency routing</li>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Automated Gmail delivery</li>
+                <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Auto-updates last reminder date</li>
+              </ul>
+            </div>
+
+            <div class="project-problem">
+              <h4>Workflow Architecture</h4>
+              <p>
+                Daily Review → Fetch Pending Invoices → Google Sheets → Compute Days Until Due →
+                OpenAI (message drafting) → Routing: <strong>Upcoming 1–3 days</strong> sends a
+                friendly reminder; <strong>Overdue 1–15 days</strong> escalates to overdue alert
+                and also notifies the Accounts Team. All branches update the Last Reminder Date.
+              </p>
+            </div>
+
+            <div class="project-stack">
+              <span class="stack-tag">n8n</span>
+              <span class="stack-tag">OpenAI API</span>
+              <span class="stack-tag">Google Sheets API</span>
+              <span class="stack-tag">Gmail API</span>
+              <span class="stack-tag">Scheduling</span>
+              <span class="stack-tag">Conditional Logic</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="#automation-lab" class="btn btn--primary btn--sm">
+                <i data-lucide="eye" aria-hidden="true"></i> View Workflow
+              </a>
+              <a href="#" class="btn btn--ghost btn--sm" aria-label="GitHub (placeholder)">
+                <i data-lucide="github" aria-hidden="true"></i> GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Preview -->
+          <div class="project-preview">
+            <div class="project-preview__badge">
+              <span class="status-dot status-dot--live" aria-hidden="true"></span>
+              Live Project
+            </div>
+            <img
+              src="assets/n8n-invoice-workflow.png"
+              alt="n8n workflow canvas showing AI Invoice Reminder Automation: Daily Review triggers invoice fetch from Google Sheets, computes days until due, uses OpenAI to draft messages, routes via Gmail to Upcoming or Overdue paths, then updates Last Reminder Date."
+              class="project-preview__img"
+              style="object-position: left center;"
+            />
+            <div class="project-preview__overlay" style="background: linear-gradient(to left, transparent 55%, var(--bg-card));" aria-hidden="true"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Dynamic upcoming projects from admin -->
+      <div id="dynamic-projects-wrapper" style="display:none; margin-top: 48px;">
+        <div class="section-label" style="margin-bottom: 20px;">
+          <span class="label-line" aria-hidden="true"></span>
+          More Upcoming Projects
+        </div>
+        <div class="dynamic-projects-grid" id="dynamic-projects-container">
+          <!-- Injected by script.js from localStorage admin data -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       AUTOMATION LAB (N8N SHOWCASE)
+  ========================================================= -->
+  <section class="section automation-lab" id="automation-lab" aria-labelledby="lab-heading">
+    <div class="section-container">
+      <div class="section-label">
+        <span class="label-line" aria-hidden="true"></span>
+        Inside My Automation Lab
+      </div>
+
+      <div class="lab-header reveal">
+        <h2 class="section-heading" id="lab-heading">
+          How the<br />
+          <span class="gradient-text">AI Telegram Workflow</span><br />
+          Actually Works
+        </h2>
+        <p class="section-sub">
+          A technical breakdown of my first production n8n automation — from incoming
+          Telegram message to AI-generated response.
+        </p>
+      </div>
+
+      <!-- Architecture diagram -->
+      <div class="workflow-diagram reveal" aria-label="Workflow architecture diagram">
+        <!-- Nodes row -->
+        <div class="wf-row">
+          <div class="wf-node wf-node--trigger">
+            <div class="wf-node__icon">
+              <i data-lucide="send" aria-hidden="true"></i>
+            </div>
+            <span class="wf-node__label">Telegram Trigger</span>
+            <span class="wf-node__sub">Updates: message</span>
+          </div>
+
+          <div class="wf-arrow" aria-hidden="true">
+            <div class="wf-arrow__line"></div>
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+          <div class="wf-node wf-node--process">
+            <div class="wf-node__icon">
+              <i data-lucide="git-merge" aria-hidden="true"></i>
+            </div>
+            <span class="wf-node__label">Basic LLM Chain</span>
+            <span class="wf-node__sub">AI Processing Layer</span>
+          </div>
+
+          <div class="wf-arrow" aria-hidden="true">
+            <div class="wf-arrow__line"></div>
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+          <div class="wf-node wf-node--output">
+            <div class="wf-node__icon">
+              <i data-lucide="send" aria-hidden="true"></i>
+            </div>
+            <span class="wf-node__label">Send a Text Message</span>
+            <span class="wf-node__sub">sendMessage: message</span>
+          </div>
+        </div>
+
+        <!-- Model connections -->
+        <div class="wf-models" aria-label="AI model connections">
+          <div class="wf-model-line" aria-hidden="true"></div>
+          <div class="wf-models-row">
+            <div class="wf-model wf-model--openai">
+              <div class="wf-model__icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="24" height="24">
+                  <path d="M22.2 12.7a5.9 5.9 0 0 0-.5-4.9 6 6 0 0 0-6.5-2.9A6 6 0 0 0 10.8 3a6 6 0 0 0-5.7 4.1A6 6 0 0 0 1.8 9.3a6 6 0 0 0 .7 6.8 6 6 0 0 0 .5 4.9 6 6 0 0 0 6.5 2.9A6 6 0 0 0 13.2 21a6 6 0 0 0 5.7-4.1 6 6 0 0 0 3.3-2.2 6 6 0 0 0 0-2z" fill="white"/>
+                </svg>
+              </div>
+              <span class="wf-model__label">OpenAI Chat Model</span>
+              <span class="wf-model__tag">GPT</span>
+            </div>
+            <div class="wf-model wf-model--gemini">
+              <div class="wf-model__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="url(#grad1)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#4285F4"/>
+                      <stop offset="33%" stop-color="#EA4335"/>
+                      <stop offset="66%" stop-color="#FBBC05"/>
+                      <stop offset="100%" stop-color="#34A853"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <span class="wf-model__label">Google Gemini Chat Model</span>
+              <span class="wf-model__tag">Gemini</span>
+            </div>
+          </div>
+          <p class="wf-model-caption">Both models connect to the Basic LLM Chain as configurable fallback options</p>
+        </div>
+      </div>
+
+      <!-- Actual n8n screenshot -->
+      <div class="workflow-screenshot reveal">
+        <div class="screenshot-header">
+          <div class="screenshot-dots" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="screenshot-title">n8n Workflow Canvas — AI Telegram Bot</span>
+        </div>
+        <img
+          src="assets/n8n-workflow.png"
+          alt="n8n workflow canvas showing the actual AI Telegram automation: Telegram Trigger connects to Basic LLM Chain, which sends to Telegram. OpenAI Chat Model and Google Gemini Chat Model both feed into the LLM Chain."
+          class="workflow-img"
+        />
+      </div>
+
+      <!-- Technical breakdown -->
+      <div class="lab-breakdown">
+        <div class="breakdown-step reveal">
+          <div class="breakdown-step__num">01</div>
+          <div class="breakdown-step__icon breakdown-step__icon--blue">
+            <i data-lucide="zap" aria-hidden="true"></i>
+          </div>
+          <div class="breakdown-step__content">
+            <h4>Trigger</h4>
+            <p>The <strong>Telegram Trigger</strong> node listens for incoming messages via webhook. When a user sends a message to the Telegram bot, n8n immediately receives the update and passes the message payload downstream.</p>
+          </div>
+        </div>
+
+        <div class="breakdown-connector" aria-hidden="true"></div>
+
+        <div class="breakdown-step reveal">
+          <div class="breakdown-step__num">02</div>
+          <div class="breakdown-step__icon breakdown-step__icon--purple">
+            <i data-lucide="cpu" aria-hidden="true"></i>
+          </div>
+          <div class="breakdown-step__content">
+            <h4>Processing</h4>
+            <p>The <strong>Basic LLM Chain</strong> receives the raw message and forwards it to the configured language model. This node handles prompt formatting, API calls, and response extraction — abstracted cleanly by n8n.</p>
+          </div>
+        </div>
+
+        <div class="breakdown-connector" aria-hidden="true"></div>
+
+        <div class="breakdown-step reveal">
+          <div class="breakdown-step__num">03</div>
+          <div class="breakdown-step__icon breakdown-step__icon--blue">
+            <i data-lucide="brain" aria-hidden="true"></i>
+          </div>
+          <div class="breakdown-step__content">
+            <h4>AI Models</h4>
+            <p>Both <strong>OpenAI</strong> (GPT) and <strong>Google Gemini</strong> are connected as configurable model options. The workflow supports a fallback pattern — if one model is unavailable, the chain can switch to the other.</p>
+          </div>
+        </div>
+
+        <div class="breakdown-connector" aria-hidden="true"></div>
+
+        <div class="breakdown-step reveal">
+          <div class="breakdown-step__num">04</div>
+          <div class="breakdown-step__icon breakdown-step__icon--green">
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+          </div>
+          <div class="breakdown-step__content">
+            <h4>Output</h4>
+            <p>The <strong>Send a Text Message</strong> node takes the AI-generated response and sends it back to the originating Telegram chat — completing the automated conversation loop without any manual intervention.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Workflow Section -->
+      <div style="margin-top: 60px;">
+        <div class="section-label" style="margin-bottom: 28px;">
+          <span class="label-line" aria-hidden="true"></span>
+          Workflow 02
+        </div>
+        <div class="lab-header">
+          <h2 class="section-heading">
+            AI Invoice<br />
+            <span class="gradient-text">Reminder System</span>
+          </h2>
+          <p class="section-sub">
+            A multi-branch automation that handles the full invoice reminder lifecycle —
+            from scheduled data fetch to AI-drafted, urgency-routed Gmail delivery.
+          </p>
+        </div>
+
+        <!-- Invoice workflow screenshot -->
+        <div class="workflow-screenshot reveal">
+          <div class="screenshot-header">
+            <div class="screenshot-dots" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="screenshot-title">n8n Workflow Canvas — AI Invoice Reminder Automation</span>
+          </div>
+          <img
+            src="assets/n8n-invoice-workflow.png"
+            alt="n8n workflow showing Daily Review trigger, Fetch Pending Invoices, Get rows from Google Sheet, Compute Days Until Due, OpenAI message generation, conditional routing to Upcoming 1-3 Days or Overdue 1-15 Days branches, Gmail send nodes, and Update Last Reminder Date."
+            class="workflow-img"
+          />
+        </div>
+
+        <!-- Invoice workflow breakdown -->
+        <div class="lab-breakdown">
+          <div class="breakdown-step reveal">
+            <div class="breakdown-step__num">01</div>
+            <div class="breakdown-step__icon breakdown-step__icon--orange">
+              <i data-lucide="clock" aria-hidden="true"></i>
+            </div>
+            <div class="breakdown-step__content">
+              <h4>Daily Schedule Trigger</h4>
+              <p>The <strong>Daily Review</strong> node fires automatically on a set schedule each day, initiating the invoice check pipeline without any manual intervention.</p>
+            </div>
+          </div>
+
+          <div class="breakdown-connector" aria-hidden="true"></div>
+
+          <div class="breakdown-step reveal">
+            <div class="breakdown-step__num">02</div>
+            <div class="breakdown-step__icon breakdown-step__icon--green">
+              <i data-lucide="table" aria-hidden="true"></i>
+            </div>
+            <div class="breakdown-step__content">
+              <h4>Fetch &amp; Read Invoice Data</h4>
+              <p><strong>Fetch Pending Invoices</strong> and <strong>Get row(s) in sheet</strong> nodes pull all outstanding invoice records from Google Sheets, including client details, amounts, and due dates.</p>
+            </div>
+          </div>
+
+          <div class="breakdown-connector" aria-hidden="true"></div>
+
+          <div class="breakdown-step reveal">
+            <div class="breakdown-step__num">03</div>
+            <div class="breakdown-step__icon breakdown-step__icon--blue">
+              <i data-lucide="calculator" aria-hidden="true"></i>
+            </div>
+            <div class="breakdown-step__content">
+              <h4>Compute Days Until Due</h4>
+              <p>The <strong>Compute Days Until Due</strong> node calculates the number of days remaining (or overdue) for each invoice, which determines the urgency routing path downstream.</p>
+            </div>
+          </div>
+
+          <div class="breakdown-connector" aria-hidden="true"></div>
+
+          <div class="breakdown-step reveal">
+            <div class="breakdown-step__num">04</div>
+            <div class="breakdown-step__icon breakdown-step__icon--purple">
+              <i data-lucide="brain" aria-hidden="true"></i>
+            </div>
+            <div class="breakdown-step__content">
+              <h4>AI Message Generation</h4>
+              <p><strong>OpenAI (Message a model)</strong> drafts a contextually appropriate reminder message using invoice details — different tones for upcoming vs. overdue scenarios.</p>
+            </div>
+          </div>
+
+          <div class="breakdown-connector" aria-hidden="true"></div>
+
+          <div class="breakdown-step reveal">
+            <div class="breakdown-step__num">05</div>
+            <div class="breakdown-step__icon breakdown-step__icon--blue">
+              <i data-lucide="git-branch" aria-hidden="true"></i>
+            </div>
+            <div class="breakdown-step__content">
+              <h4>Urgency Routing &amp; Delivery</h4>
+              <p>Conditional nodes route each invoice: <strong>Upcoming 1–3 days</strong> sends a friendly reminder; <strong>Overdue 1–15 days</strong> triggers an overdue alert and separately notifies the Accounts Team — all via Gmail. The Last Reminder Date is updated in the sheet after delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dynamic Research Section (populated from admin) -->
+  <section class="section research-section" id="research" aria-labelledby="research-heading" style="display:none;">
+    <div class="section-container">
+      <div class="section-label">
+        <span class="label-line" aria-hidden="true"></span>
+        Research &amp; Notes
+      </div>
+      <div class="research-header reveal" style="margin-bottom: 48px;">
+        <h2 class="section-heading" id="research-heading">
+          Ideas I'm<br />
+          <span class="gradient-text">Exploring &amp; Writing</span>
+        </h2>
+        <p class="section-sub">
+          Research notes, analysis, and thoughts on AI, finance, and technology.
+        </p>
+      </div>
+      <div class="research-grid" id="dynamic-research-container">
+        <!-- Injected by script.js from localStorage -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       LEARNING JOURNEY
+  ========================================================= -->
+  <section class="section journey" id="journey" aria-labelledby="journey-heading">
+    <div class="section-container">
+      <div class="section-label">
+        <span class="label-line" aria-hidden="true"></span>
+        Learning Journey
+      </div>
+
+      <div class="journey-header reveal">
+        <h2 class="section-heading" id="journey-heading">
+          My Path of<br />
+          <span class="gradient-text">Continuous Learning</span>
+        </h2>
+        <p class="section-sub">
+          An ongoing record of my learning tracks. Updated as I complete projects
+          and reach new milestones.
+        </p>
+      </div>
+
+      <div class="journey-tracks">
+
+        <div class="journey-track reveal">
+          <div class="track-header">
+            <div class="track-icon track-icon--blue"><i data-lucide="brain-circuit" aria-hidden="true"></i></div>
+            <div>
+              <h3>AI &amp; Generative AI</h3>
+              <span class="track-status track-status--active">Active</span>
+            </div>
+          </div>
+          <div class="track-milestones">
+            <div class="milestone milestone--done">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>Foundations of LLMs</strong>
+                <p>Studied how large language models work, tokenisation, and transformer architecture concepts.</p>
+              </div>
+            </div>
+            <div class="milestone milestone--done">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>Prompt Engineering</strong>
+                <p>Explored prompting strategies, few-shot learning, and system instructions.</p>
+              </div>
+            </div>
+            <div class="milestone milestone--active">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>AI Agents &amp; Tool Use</strong>
+                <p>Learning how autonomous AI agents use tools, memory, and multi-step reasoning.</p>
+                <span class="milestone__badge">In Progress</span>
+              </div>
+            </div>
+            <div class="milestone milestone--planned">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>RAG Systems &amp; Vector Databases</strong>
+                <p>Planned: building retrieval-augmented generation pipelines.</p>
+                <span class="milestone__badge milestone__badge--planned">Planned</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-track reveal">
+          <div class="track-header">
+            <div class="track-icon track-icon--purple"><i data-lucide="workflow" aria-hidden="true"></i></div>
+            <div>
+              <h3>Workflow Automation</h3>
+              <span class="track-status track-status--active">Active</span>
+            </div>
+          </div>
+          <div class="track-milestones">
+            <div class="milestone milestone--done">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>n8n Setup &amp; Fundamentals</strong>
+                <p>Installed n8n, explored nodes, triggers, and basic workflow concepts.</p>
+              </div>
+            </div>
+            <div class="milestone milestone--done">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>AI Telegram Bot</strong>
+                <p>Built first live AI automation: Telegram → LLM Chain → Response.</p>
+              </div>
+            </div>
+            <div class="milestone milestone--planned">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>Multi-step Business Automations</strong>
+                <p>Planned: CRM, email, and reporting automation workflows.</p>
+                <span class="milestone__badge milestone__badge--planned">Planned</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-track reveal">
+          <div class="track-header">
+            <div class="track-icon track-icon--green"><i data-lucide="trending-up" aria-hidden="true"></i></div>
+            <div>
+              <h3>Finance &amp; Analytics</h3>
+              <span class="track-status track-status--active">Active</span>
+            </div>
+          </div>
+          <div class="track-milestones">
+            <div class="milestone milestone--done">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>Financial Statement Analysis</strong>
+                <p>Studying income statements, balance sheets, and cash flow analysis.</p>
+              </div>
+            </div>
+            <div class="milestone milestone--active">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>Financial Modelling</strong>
+                <p>Building financial models in Excel and exploring Python-based analysis.</p>
+                <span class="milestone__badge">In Progress</span>
+              </div>
+            </div>
+            <div class="milestone milestone--planned">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>Financial Analysis Dashboard</strong>
+                <p>Planned: interactive dashboard combining finance and data visualisation.</p>
+                <span class="milestone__badge milestone__badge--planned">Planned</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-track reveal">
+          <div class="track-header">
+            <div class="track-icon track-icon--orange"><i data-lucide="shield" aria-hidden="true"></i></div>
+            <div>
+              <h3>Cybersecurity</h3>
+              <span class="track-status">Exploring</span>
+            </div>
+          </div>
+          <div class="track-milestones">
+            <div class="milestone milestone--done">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>Networking Fundamentals</strong>
+                <p>TCP/IP, DNS, HTTP, OSI model — understanding how the internet works.</p>
+              </div>
+            </div>
+            <div class="milestone milestone--active">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>Linux &amp; Command Line</strong>
+                <p>Navigating the Linux file system, permissions, and CLI tools.</p>
+                <span class="milestone__badge">In Progress</span>
+              </div>
+            </div>
+            <div class="milestone milestone--planned">
+              <span class="milestone__dot" aria-hidden="true"></span>
+              <div class="milestone__content">
+                <strong>Web Security &amp; Ethical Hacking Labs</strong>
+                <p>Planned: TryHackMe rooms, OWASP Top 10, and CTF challenges.</p>
+                <span class="milestone__badge milestone__badge--planned">Planned</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.journey-tracks -->
+    </div>
+  </section>
+
+  <!-- =========================================================
+       EXPERIENCE & ACHIEVEMENTS
+  ========================================================= -->
+  <section class="section experience" id="experience" aria-labelledby="experience-heading">
+    <div class="section-container">
+      <div class="section-label">
+        <span class="label-line" aria-hidden="true"></span>
+        Experience &amp; Background
+      </div>
+
+      <div class="experience-header reveal">
+        <h2 class="section-heading" id="experience-heading">
+          Education, Projects<br />
+          <span class="gradient-text">&amp; Achievements</span>
+        </h2>
+      </div>
+
+      <div class="experience-grid">
+        <!-- Education -->
+        <div class="exp-column reveal">
+          <h3 class="exp-column__title">
+            <i data-lucide="graduation-cap" aria-hidden="true"></i>
+            Education
+          </h3>
+          <div class="exp-items">
+            <div class="exp-item">
+              <div class="exp-item__marker" aria-hidden="true"></div>
+              <div class="exp-item__content">
+                <div class="exp-item__period">2026 — Present</div>
+                <strong>Bachelor of Business Administration</strong>
+                <p>Stride School of Business, Bengaluru</p>
+                <p class="exp-item__detail">Relevant coursework: Marketing Management, Business Economics, Financial Accounting, Market Research, Organisational Behavior.</p>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-item__marker" aria-hidden="true"></div>
+              <div class="exp-item__content">
+                <div class="exp-item__period">2026</div>
+                <strong>Higher Secondary (MPC Stream)</strong>
+                <p>SR Junior College</p>
+                <p class="exp-item__detail">Mathematics, Physics, Chemistry — 91.9%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="exp-column reveal">
+          <h3 class="exp-column__title">
+            <i data-lucide="award" aria-hidden="true"></i>
+            Certifications &amp; Courses
+          </h3>
+          <div class="exp-items">
+            <div class="exp-item">
+              <div class="exp-item__marker" aria-hidden="true"></div>
+              <div class="exp-item__content">
+                <div class="exp-item__period">In Progress</div>
+                <strong>McKinsey Forward Program</strong>
+                <p>McKinsey &amp; Company — Selected Participant</p>
+                <p class="exp-item__detail">Structured problem-solving, digital communication &amp; adaptability.</p>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-item__marker" aria-hidden="true"></div>
+              <div class="exp-item__content">
+                <div class="exp-item__period">Self-Paced</div>
+                <strong>Web Design &amp; Email Marketing</strong>
+                <p>Self-directed learning</p>
+                <p class="exp-item__detail">Responsive landing pages, email automation, and copywriting fundamentals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects & Achievements -->
+        <div class="exp-column reveal">
+          <h3 class="exp-column__title">
+            <i data-lucide="trophy" aria-hidden="true"></i>
+            Projects &amp; Milestones
+          </h3>
+          <div class="exp-items">
+            <div class="exp-item">
+              <div class="exp-item__marker" aria-hidden="true"></div>
+              <div class="exp-item__content">
+                <div class="exp-item__period">2024</div>
+                <strong>AI Telegram Automation</strong>
+                <p>Built first live n8n AI workflow connecting Telegram with OpenAI and Google Gemini.</p>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-item__marker" aria-hidden="true"></div>
+              <div class="exp-item__content">
+                <div class="exp-item__period">Ongoing</div>
+                <strong>Portfolio Website</strong>
+                <p>Designed and developed this personal portfolio using HTML, CSS, and JavaScript.</p>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-item__marker" aria-hidden="true"></div>
+              <div class="exp-item__content">
+                <div class="exp-item__period">Ongoing</div>
+                <strong>AIESEC Youth 4 Impact</strong>
+                <p>Team Member, Leadership &amp; Career Domain</p>
+                <p class="exp-item__detail">Cross-functional coordination for youth career readiness sessions, leadership webinars, and delegate outreach.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT
+  ========================================================= -->
+  <section class="section contact" id="contact" aria-labelledby="contact-heading">
+    <div class="section-container">
+      <!-- Glow -->
+      <div class="contact-glow" aria-hidden="true"></div>
+
+      <div class="contact-header reveal">
+        <div class="section-label">
+          <span class="label-line" aria-hidden="true"></span>
+          Get In Touch
+        </div>
+        <h2 class="section-heading" id="contact-heading">
+          Have an Idea?<br />
+          <span class="gradient-text">Let's Build Something.</span>
+        </h2>
+        <p class="section-sub">
+          I'm always open to collaborating on interesting projects, discussing ideas, or simply connecting with
+          people working at the intersection of technology and business.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left — Info -->
+        <div class="contact-info reveal">
+          <div class="contact-links">
+            <a href="mailto:mikkilikarthik0706@gmail.com" class="contact-link" aria-label="Send email">
+              <div class="contact-link__icon contact-link__icon--blue">
+                <i data-lucide="mail" aria-hidden="true"></i>
+              </div>
+              <div>
+                <span class="contact-link__label">Email</span>
+                <span class="contact-link__value">mikkilikarthik0706@gmail.com</span>
+              </div>
+              <i data-lucide="arrow-up-right" class="contact-link__arrow" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://instagram.com/themkarthik" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+              <div class="contact-link__icon contact-link__icon--purple">
+                <i data-lucide="instagram" aria-hidden="true"></i>
+              </div>
+              <div>
+                <span class="contact-link__label">Instagram</span>
+                <span class="contact-link__value">@themkarthik</span>
+              </div>
+              <i data-lucide="arrow-up-right" class="contact-link__arrow" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/karthik-mikkili" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <div class="contact-link__icon contact-link__icon--blue">
+                <i data-lucide="linkedin" aria-hidden="true"></i>
+              </div>
+              <div>
+                <span class="contact-link__label">LinkedIn</span>
+                <span class="contact-link__value">linkedin.com/in/karthik-mikkili</span>
+              </div>
+              <i data-lucide="arrow-up-right" class="contact-link__arrow" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://github.com/themkarthik" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <div class="contact-link__icon contact-link__icon--purple">
+                <i data-lucide="github" aria-hidden="true"></i>
+              </div>
+              <div>
+                <span class="contact-link__label">GitHub</span>
+                <span class="contact-link__value">github.com/themkarthik</span>
+              </div>
+              <i data-lucide="arrow-up-right" class="contact-link__arrow" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="contact-availability">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Currently open to collaborations, internships, and interesting opportunities.
+          </div>
+        </div>
+
+        <!-- Right — Form -->
+        <div class="contact-form-wrap reveal reveal--right">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="fname" name="name" placeholder="Your name" required autocomplete="name" />
+                <span class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="femail">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="femail" name="email" placeholder="your@email.com" required autocomplete="email" />
+                <span class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject <span aria-hidden="true">*</span></label>
+              <input type="text" id="fsubject" name="subject" placeholder="What's this about?" required />
+              <span class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message <span aria-hidden="true">*</span></label>
+              <textarea id="fmessage" name="message" rows="5" placeholder="Your message..." required></textarea>
+              <span class="form-error" role="alert" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <i data-lucide="send" aria-hidden="true"></i>
+              Send Message
+            </button>
+            <div class="form-notice">
+              <i data-lucide="info" aria-hidden="true"></i>
+              <small>This form currently requires a backend or email service to deliver messages. Add your preferred solution (EmailJS, Formspree, or a server endpoint) to activate it.</small>
+            </div>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+              <i data-lucide="check-circle-2" aria-hidden="true"></i>
+              <div>
+                <strong>Message ready!</strong>
+                <p>Configure an email service to send it. See the form notice below for options.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#home" class="nav-logo" aria-label="Back to top">
+          <span class="logo-bracket">[</span>MK<span class="logo-bracket">]</span>
+        </a>
+        <p class="footer-tagline">Building at the intersection of Finance, Technology &amp; AI.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© <span id="footerYear"></span> Mikkili Karthik. Designed &amp; built with care.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="admin.html" class="footer-admin-link" title="Admin Dashboard">Admin</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
